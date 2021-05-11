@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="preconnect" href="https://fonts.gstatic.com"> 
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <h3>Calculadora Juan Pablo</h3>
+    <nav>
+      <div><!--Contenedor de la tabla-->
+      <header id="pantalla"></header>
+      <table>
+        <tbody>
+          <tr>
+            <td class="numero" onclick="intNum('7')">7</td>
+            <td class="numero" onclick="intNum('8')">8</td>
+            <td class="numero" onclick="intNum('9')">9</td>
+            <td class="operador" onclick="intNum('/')">/</td>
+          </tr>
+          <tr>
+            <td class="numero" onclick="intNum('4')">4</td>
+            <td class="numero" onclick="intNum('5')">5</td>
+            <td class="numero" onclick="intNum('6')">6</td>
+            <td class="operador" onclick="intNum('+')">+</td>
+          </tr>
+          <tr>
+            <td class="numero" onclick="intNum('1')">1</td>
+            <td class="numero" onclick="intNum('2')">2</td>
+            <td class="numero" onclick="intNum('3')">3</td>
+            <td class="operador" onclick="intNum('-')">-</td>
+          </tr>
+          <tr>
+            <td class="igual" onclick="clearScr()">AC</td>
+            <td class="numero" onclick="intNum('0')">0</td>
+            <td class="igual" onclick="equalTo()">=</td>
+            <td class="operador" onclick="intNum('*')">x</td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+    <script src="script.js"></script>
+  </body>
+</html>
